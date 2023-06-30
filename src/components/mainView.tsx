@@ -88,7 +88,7 @@ export default function mainView() {
             <InputLabel>px</InputLabel>
             <Input id="px" onChange={calcVw} value={pxTwo}></Input>
             <InputLabel>vw</InputLabel>
-            <Input value={pxTwo / rootWidth}></Input>
+            <Input value={(pxTwo / rootWidth) * 100}></Input>
           </CardContent>
         </Card>
         <Card>
@@ -103,7 +103,7 @@ export default function mainView() {
             <InputLabel>px</InputLabel>
             <Input id="px" onChange={calcVh} value={pxThree}></Input>
             <InputLabel>vh</InputLabel>
-            <Input value={pxThree / rootHeight}></Input>
+            <Input value={(pxThree / rootHeight) * 100}></Input>
           </CardContent>
         </Card>
       </Box>
